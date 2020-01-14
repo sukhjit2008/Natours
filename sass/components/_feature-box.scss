@@ -1,0 +1,31 @@
+.feature{
+    text-align: center;
+    &__box{
+        background-color: rgba($color-white,.8);
+        padding:2rem;
+        border-radius: 3px;
+        box-sizing: 0px 1.5rem 4rem rgba($color-black,.2); 
+        text-align: center;
+        transition: all .2s;
+       &:hover{
+        transform: translateY(-10px) scale(1.09);
+       }
+
+    }
+    &__icon{
+        font-size: 6rem;
+        background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+        display: inline-block;
+        width:100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+    }
+    &__text{
+    font-size: $font-primary;
+    }
+
+   
+
+}

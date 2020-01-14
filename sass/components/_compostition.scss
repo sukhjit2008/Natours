@@ -1,0 +1,31 @@
+.composition{
+    position: relative;
+    transition: all .2s ;
+    &__img{
+        width:55%;
+        position: absolute;
+        z-index: 100;
+        outline-offset: 2rem;
+        transition: all .2s;
+        box-sizing: 0px 1.5rem 4rem rgba($color-black,.2);
+        &:hover{
+        outline: 1.5rem solid $color-primary; 
+        transform: scale(1.09) translateY(-10px);
+        }
+        &--1{
+          top:-1rem;
+          left:0;  
+        }
+        &--2{
+            top:3.5rem;
+            left:43%; 
+        }
+    &--3{
+        top:10rem;
+        left:20%; 
+        }
+    }
+    &:hover &__img:not(:hover){
+        transform: scale(.95);
+    }
+}

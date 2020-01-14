@@ -24,3 +24,29 @@ body{
         animation: moveInRight .9s .2s ease-out;
     }
 }
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    color:$color-white;
+    display: inline-block;
+    width:100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    &:hover{
+        transform: skewX(12deg) skewY(2deg);
+    }
+}
+.heading-tertiary{
+    font-size: $font-primary;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $font-primary; 
+    &:not(:last-child){
+    margin-bottom: 2rem;
+    } 
+}
