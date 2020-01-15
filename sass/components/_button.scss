@@ -8,7 +8,7 @@
     display: inline-block;
     padding:1.5rem 4rem;
     border-radius: 20rem;
-      transition: all .1s;
+   transition: all .1s;
    } 
 
    &:hover{
@@ -27,9 +27,35 @@ color:$color-grey-dark;
 background-color: white;
 }
 &--green{
-color:$color-primary;
+   color:$color-white;
+   background-color: $color-primary;
+
 }
 &--animated{
    animation: moveUpwards 1s .2s backwards;
 }
+}
+
+.btn-text,
+.btn-text:visited,
+.btn-text:link{
+   font-size: $font-primary;
+   text-decoration: none;
+   font-family: inherit;
+   padding-bottom: 0.2rem;
+   border-bottom: 1px solid 
+   $color-primary;
+   transition: all .2s;
+   display: inline-block;
+   &:hover{
+      background-color: $color-primary;
+      color:$color-white;
+      box-shadow: 0px 1rem 2rem rgba($color-black,.1);
+      transform: translateY(-3px);
+   }
+   &:active{
+      box-shadow: 0px .5rem 1rem rgba($color-black,.1);
+      transform: translateY(-1px);
+   }
+
 }
