@@ -127,8 +127,7 @@ body {
     color: #777;
     background-color: white; }
   .btn--green {
-    color: #fff;
-    background-color: #55c57a; }
+    color: #55c57a; }
   .btn--animated {
     animation: moveUpwards 1s .2s backwards; }
 
@@ -315,6 +314,7 @@ body {
   opacity: .15; }
   .bg-video__content {
     width: 100%;
+    height: 100%;
     object-fit: cover; }
 
 .story {
@@ -400,5 +400,5 @@ body {
   background-color: #f7f7f7; }
 
 .section-story {
-  padding: 10rem 0;
+  padding: 15rem 0;
   position: relative; }
